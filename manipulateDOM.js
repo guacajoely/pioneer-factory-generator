@@ -15,3 +15,5 @@ for(let i=0; i < coloredReindeer.length; i++){
 article.innerHTML += `<section style="color: ${coloredReindeer[i].color};"> ${coloredReindeer[i].name} </section>`
 
 }
+
+coloredReindeerBuilder()

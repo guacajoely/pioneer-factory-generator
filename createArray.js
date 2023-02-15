@@ -17,9 +17,19 @@ const getColor = getNextColor()
 
 
 // 2. A factory function to build a new reindeer object. This function will need to use the generator.
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//EXPERIMENT WITH OBJECT PROTOTYPE VS NULL
+const example = {
+    "name": "Joel",
+    "color": "burple",
+  };
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 const objectFactory = function (name) {
 
-    return Object.create(null, {
+    return Object.create(example, {
         "name": { value: name, enumerable: true },
         "color": { value: getColor.next().value, enumerable: true },
     })
@@ -48,3 +58,4 @@ const coloredReindeerBuilder = function () {
 
 }
 
+console.log(coloredReindeerBuilder())
