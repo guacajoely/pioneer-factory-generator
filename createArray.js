@@ -47,13 +47,9 @@ const coloredReindeerBuilder = function () {
 
 }
 
-
 coloredReindeerBuilder()
 
 
-console.log(coloredReindeer.length)
-console.log(coloredReindeer[0].name)
-console.log(coloredReindeer[0].color)
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
