@@ -1,4 +1,5 @@
-// In this exercise, you start with a collection of reindeer names. Your task is to add each reindeer name to an HTML article element with an id of colored-reindeer.
+// In this exercise, you start with a collection of reindeer names. 
+// Your task is to add each reindeer name to an HTML article element with an id of colored-reindeer.
 
 // After you read the instructions, your goal is to have three functions.
 
@@ -47,20 +48,3 @@ const coloredReindeerBuilder = function () {
 
 }
 
-coloredReindeerBuilder()
-
-
-
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
-//MANIPULATE DOM
-
-const article = document.getElementById("colored-reindeer")
-
-//loop through colored reindeer array
-for(let i=0; i < coloredReindeer.length; i++){
-
-//add new section for each reindeer to HTML as child of "colored-reindeer" article
-article.innerHTML += `<section style="color: ${coloredReindeer[i].color};"> ${coloredReindeer[i].name} </section>`
-
-}
